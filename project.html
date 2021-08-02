@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Manipulating the DOM</title>
+  <!-- Load Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">  <!-- Load Styles -->
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- HTML Follows BEM naming conventions
+  IDs are only used for sections to connect menu achors to sections -->
+
+  <header class="page__header">
+    <nav class="navbar__menu" >
+      <!-- Navigation starts as empty UL that will be populated with JS -->
+      <ul id="navbar">
+
+
+
+
+    </ul>
+    </nav>
+  </header>
+  <main>
+    <header class="main__hero">
+      <h1>just travel </h1>
+    </header>
+    <div class='ana'> <img src='images/cairo.jpg'>
+      <img src='images/flat.jpg' >
+      <img src='images/sina.jpg' >
+      <img src='images/colo.jpg'>
+      <img src='images/new.jpg' >
+
+    </div>
+    <!-- Each Section has an ID (used for the anchor) and
+    a data attribute that will populate the li node.
+    Adding more sections will automatically populate nav.
+    The first section is set to active class by default -->
+
+    <section id="hello"   class="your-active-class"  data-nav=section 1 >
+      <div class="landing__container">
+        <h2>Egypt</h2>
+        <p>
+      <span id='pyramids'> <img src='images/pyramids.jpg' > <span>
+
+          Egypt, officially the Arab Republic of Egypt, is one of the greatest, most interesting countries you will ever see. With all of its history, culture, culinary, religion, and versatile geography, Egypt has a special spot for everyone who gets to visit this magnificent place.
+
+Egyptian history is infinite and is one of the greatest inheritance from human civilization but Egypt is much more than just its thousands of years old Pyramids and monuments, Egypt is life itself and sure is a place that every human who can should once in their lifetime come visit.
+
+Major tourist destinations include the millennia-old monuments in the Nile Valley. Principal among them are the Pyramids and Great Sphinx at Giza, the Abu Simbel temples south of Aswan and the Karnak Temple Complex and Valley of the Kings near Luxor. Attractions in Cairo include the Cairo Museum and the Mosque of Muhammad Ali Pasha. The coast of the Sinai Peninsula has well-visited seaside resorts, in addition to Hurghada city on the Red Sea coast and the Famous El Gouna Resort 25 km Hurghada
+
+</p>
+
+
+    </section>
+    <section id="nadine"  class="your-active-class" data-nav=section 2 >
+      <div class="landing__container">
+        <h2>italy</h2>
+        <p> <span id='roma'>
+       <img src='images/rome.jpg' height='300px' widht='300px'> </span>
+
+        Italy is home to the greatest number of UNESCO World Heritage Sites in the world. High art and monuments are to be found everywhere around the country. Its great cities of art, like Rome, Venice and Florence are world famous and have been attracting visitors for centuries. Besides its art treasures Italy also features beautiful coasts, alpine lakes and mountains. No wonder it is often nicknamed the Bel Paese (beautiful country).
+
+        With so many amazing sights, putting together a compilation of top tourist attractions in Italy is no easy task. The following list however should give a good indication of why over 40 million foreign tourists visit Italy ever year.
+       </p>
+    </section>
+    <section id="layla"   class="your-active-class"  data-nav=section 3>
+      <div class="landing__container">
+        <h2>USA</h2>
+<p> <span id='newyork'> <img src='images/new.jpg' height='300px' widht='300px'> </span>
+  The US is home to some of the most spectacular scenery in the world and some of the most recognizable icons on the planet. Many of the top attractions in the United States are bucket list destinations, drawing visitors from around the world.
+
+Compiling a list of places to see is step one. But keep in mind, given the size of the United States, most people plan their trips to a specific region, be it the East Coast, the Southwest, the beaches of Florida or California, or outlying regions like Hawaii and Alaska. You may want to see the city sights, or head out to the parks and natural areas. In some cases, you can easily combine the two if you plan a day trip or two.
+
+Plenty of options await you, with incredible sights sprinkled across the country. For anyone in the enviable position of having unlimited time and resources, these are the top attractions to include on your itinerary.
+
+
+</p>
+
+      </section>
+
+        <section id="dina"    data-nav=section 4  class="your-active-class"  >
+          <div class="landing__container">
+            <h2>France</h2>
+            <p> <span id ='images/paris'> <img src= 'eiffel.jpg'> </span>
+              From the boulevards of Paris to the fashionable seaside resorts of the Côte d'Azur, France offers some of the most beautiful scenery in the world. Fairy-tale castles, glorious cathedrals, and picture-perfect villages delight romantics. At the same time, the country's contemporary monuments and rapid train transit jolt visitors from the storybook surroundings into the ambience of the 21st century.
+Begin with the Eiffel Tower, the modern emblem of France. Then discover famous masterpieces of art at the Louvre Museum. Spend a day pretending to be royalty at the elegant Palace of Versailles. Save time for leisurely gourmet meals - traditional French gastronomy has been inscribed on the UNESCO list of Intangible Cultural Heritage.
+    Each region has its own distinctive cuisine and culture. The coastal region of Brittany offers the old-world charm of quaint fishing villages and ancient seaports, while the French Alps reveals the region's hearty cuisine of cheese fondue and charcuterie served in cozy chalets near ski slopes. Indulge in it all and savor the country's irresistible charm with our list of the top attractions in France.
+
+</p>
+
+
+    </section>
+  </div>
+
+  </main>
+  <footer class="page__footer">
+    <p>&copy Udacity</p>
+  </footer>
+<script src="js/app.js"> </script>
+</body>
+</html>
